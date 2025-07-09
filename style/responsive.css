@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .hero-bg {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 26px 18px;
+        gap: 40px;
+    }
+
+    .hero-bg .hero-box h1 {
+        width: 100%;
+    }
+
+    .hero-bg .hero-box p {
+        width: 100%;
+    }
+
+    /* ABOUT US part  */
+    h1 {
+        color: var(--st-color);
+        font-size: 34px;
+    }
+
+    .about-con {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 60px;
+    }
+
+    /* REPUTED  SCHOOLS part */
+    .school-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* studying part  */
+    .studing-box h1 {
+        width: 100%;
+    }
+
+    .studing-table {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(min-width:769px), (max-width: 1200px) {
+    .studing-table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width:1201px){
+    .studing-table {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+}
