@@ -73,6 +73,7 @@ nav {
 
 .hero-bg .hero-box h1 {
     width: 80%;
+    line-height: 70px;
 }
 
 .hero-bg .hero-box p {
@@ -119,6 +120,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
     align-items: center;
+    margin-top: 40px;
 }
 
 .about-con .box {
@@ -137,37 +139,44 @@ main {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 60px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .school-box .box>* {
     margin-top: 30px;
 }
 
+
 /* STUDYING part  */
-/* .studing-box {
-    margin-top: 60px;
+.studing-box{
+    margin-top: 80px;
 }
-
-.studing-box h1,
-.studing-box h5 {
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
+.studing-box h1{
+    text-align: center; 
+    width: 50%;
+    margin: 20px auto 0 auto;
 }
-
-.studing-table {
+.studing-table{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
-} 
-
-.studing-box .studing-table .box {
-    box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.05);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 18px;
-} */
+    margin-top: 60px;
+}
+.studing-table .box{
+    box-shadow: 10px 24px 54px 0px rgba(10, 10, 10, 0.05);
+    border-radius: 16px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+#text-1{
+    font-weight: 600;
+    margin-top: 10px;
+}
+#text-2{
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 /* Newsletter part  */
 .bg-img {
@@ -175,7 +184,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .bg-color {
@@ -197,8 +206,30 @@ main {
 .btn2:hover {
     background-color: #36a2d4;
 }
+
 /* footer part  */
-footer{
+footer {
     background-color: var(--bg-hero);
-    height: 100px;
+    margin-top: 40px;
+}
+.foot-box{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.foot-box .box1{
+    width: 25%;
+}
+.foot-box .box2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   gap: 110px;
+}
+.foot-box .box2 .box{
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
 }

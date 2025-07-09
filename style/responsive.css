@@ -7,6 +7,7 @@
 
     .hero-bg .hero-box h1 {
         width: 100%;
+        line-height: 50px;
     }
 
     .hero-bg .hero-box p {
@@ -39,18 +40,31 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* footer part  */
+    .foot-box {
+        flex-direction: column;
+    }
+
+    .foot-box .box2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+
+    .foot-box .box1 {
+        width: 100%;
+    }
 }
 
-@media(min-width:769px), (max-width: 1200px) {
+@media(min-width:769px) and (max-width: 992px) {
+    .foot-box .box2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:769px) and (max-width: 1240px) {
     .studing-table {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-}
-@media(min-width:1201px){
-    .studing-table {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-}
 }
