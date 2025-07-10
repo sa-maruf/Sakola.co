@@ -176,6 +176,7 @@ main {
 #text-2{
     font-size: 14px;
     margin-top: 5px;
+    color: #040931B5;
 }
 
 /* Newsletter part  */
@@ -204,7 +205,8 @@ main {
 }
 
 .btn2:hover {
-    background-color: #36a2d4;
+    background-color: rgb(254, 181, 43);
+    border: 1px solid rgb(254, 181, 43);
 }
 
 /* footer part  */
@@ -219,6 +221,9 @@ footer {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+}
+.foot-box .fa-brands{
+    font-size: 30px;
 }
 .foot-box .box1{
     width: 25%;
