@@ -64,7 +64,6 @@ nav {
     padding: 60px 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* align-items: center; */
 }
 
 .hero-bg .hero-box>* {
@@ -191,6 +190,7 @@ main {
 .bg-color {
     opacity: 0.8;
     border-radius: 40px;
+   
 }
 
 .bg-color .box {

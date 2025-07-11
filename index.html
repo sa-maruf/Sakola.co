@@ -9,11 +9,53 @@
     <link rel="shortcut icon" href="./images/icons/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/nav.css">
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#"><img src="./images/icons/logo.png" alt=""></a>
+                </div>
+                <!-- Section 2: Desktop Menu (Centered) -->
+                <div class="desktop-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Abouts Us</a>
+                    <a href="#">Schools</a>
+                    <a href="#">Studing</a>
+                </div>
+                <!-- Section 3: Desktop Buttons -->
+                <div class="desktop-buttons">
+                    <button class="btn btn-secondary" style="background: transparent;">Log In</button>
+                    <button class="btn btn-primary">Sing Up</button>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="mobile-menu-button">
+                    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="mobile-menu" style="background-color:#E7EFFF;">
+                <a href="#">Home</a>
+                <a href="#">Abouts Us</a>
+                <a href="#">Schools</a>
+                <a href="#">Studing</a>
+                <div class="mobile-buttons">
+                    <button class="btn btn-secondary">Log In</button>
+                    <button class="btn btn-primary">Sing Up</button>
+                </div>
+            </div>
+        </nav>
         <!-- Hero part -->
         <section class="hero-bg">
             <div class="hero-box">
@@ -217,6 +259,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
