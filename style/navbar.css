@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
 .nav-bar {
     max-width: 1300px;
     margin: 0 auto;
@@ -74,14 +61,61 @@ body {
 .mob-menu-btn {
     display: none;
 }
-.mob-menu{
+
+.mob-menu {
     display: none;
-    background-color: #0BB4FF;
-    z-index: 1;
+    background-color: #b1c8f7;
+    position: relative;
+    border-radius: 8px;
 }
 
-/* mobile menu style  */
+/* style  */
+.mob-menu-box {
+    padding: 20px;
+}
 
+.mob-menu-box .menu {
+    margin-top: 16px;
+    padding: 6px 10px;
+}
+
+.mob-menu-box .menu:hover {
+    background-color: #000D83;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.mob-menu-box .menu a:hover {
+    color: white;
+    width: 100%;
+}
+
+.mob-btn-01,
+.mob-btn-02 {
+    margin-top: 16px;
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #E5E7EB;
+}
+
+.mob-btn-02 {
+    color: white;
+    background-color: #000D83;
+}
+
+.mob-btn-01:hover {
+    background-color: #0BB4FF;
+    color: white;
+}
+
+.mob-btn-02:hover {
+    background-color: #0BB4FF;
+}
 
 @media(max-width:910px) {
 
@@ -93,15 +127,18 @@ body {
     .mob-menu-btn {
         display: flex;
     }
-    .mob-menu-btn .fa-solid{
-        color:#000D83;
+
+    .mob-menu-btn .fa-solid {
+        color: #000D83;
         font-size: 28px;
         background-color: #E7EFFF;
     }
-    .mob-menu{
+
+    .mob-menu {
         display: none;
     }
-    .mob-menu.active{
+
+    .mob-menu.active {
         display: block;
     }
 }
