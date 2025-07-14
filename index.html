@@ -9,42 +9,38 @@
     <link rel="shortcut icon" href="./images/icons/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/responsive.css">
-    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/navbar.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="logo">
-                    <a href="#"><img src="./images/icons/logo.png" alt=""></a>
+        <nav class="nav-bar">
+            <div class="nav-con">
+                <div><a href="#"><img src="./images/icons/logo.png" alt="logo"></a></div>
+                <ul class="des-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Schools</a></li>
+                    <li><a href="#">Studing</a></li>
+                </ul>
+                <div class="des-btn">
+                    <a href="#"><button class="btn-01">Log In</button></a>
+                    <a href="#"><button class="btn-02">Sing Up</button></a>
                 </div>
-                <!-- Section 2: Desktop Menu (Centered) -->
-                <div class="desktop-menu">
-                    <a href="#">Home</a>
-                    <a href="#">Abouts Us</a>
-                    <a href="#">Schools</a>
-                    <a href="#">Studing</a>
+                <div id="mob-menu-btn" class="mob-menu-btn" onclick="myFunction()">
+                    <i class="fa-solid fa-bars-staggered"></i>
                 </div>
-                <!-- Section 3: Desktop Buttons -->
-                <div class="desktop-buttons">
-                    <button class="btn btn-secondary" style="background: transparent;">Log In</button>
-                    <button class="btn btn-primary">Sing Up</button>
-                </div>
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="mobile-menu-button">
-                    <i class="fa-solid fa-bars" style="color: #000D83; font-size: 28px;"></i>
-                </button>
             </div>
-            <!-- Mobile Menu (hidden by default) -->
-            <div id="mobile-menu" class="mobile-menu" style="background-color:#E7EFFF;">
-                <a href="#">Home</a>
-                <a href="#">Abouts Us</a>
-                <a href="#">Schools</a>
-                <a href="#">Studing</a>
-                <div class="mobile-buttons">
-                    <button class="btn btn-secondary">Log In</button>
-                    <button class="btn btn-primary">Sing Up</button>
+            <div id="mob-menu" class="mob-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Schools</a></li>
+                    <li><a href="#">Studing</a></li>
+                </ul>
+                <div>
+                    <a href="#"><button class="btn-01">Log In</button></a>
+                    <a href="#"><button class="btn-02">Sing Up</button></a>
                 </div>
             </div>
         </nav>
@@ -57,8 +53,8 @@
                     very advanced technological
                     progress that is very fast and is not in the dictionary of this school the students</p>
                 <div style="display: flex; gap: 20px;">
-                    <a href="#"><button class="get-btn">Get Started</button></a>
-                    <a href="#"><button class="watch-btn">Watch Video</button></a>
+                    <a href="#"><button class="get-btn m-btn">Get Started</button></a>
+                    <a href="#"><button class="watch-btn m-btn">Watch Video</button></a>
                 </div>
                 <div class="pro-box " style="margin-top: 50px;">
                     <div class="pro"><img src="./images/icons/avatar-1.png" alt=""></div>
@@ -120,7 +116,7 @@
                     nities fields who are very instrumental in this very tiring daily life.
                     will not live without achievement</p>
                 <div>
-                    <a href="#"><button class="get-btn">Get Started</button></a>
+                    <a href="#"><button class="get-btn m-btn">Get Started</button></a>
                 </div>
             </div>
             <div style=" margin-left: auto;">
@@ -195,7 +191,7 @@
                     <p style="color: #FFFFFF; margin-top: 10px; font-size: 12px;">Sign up to receive the latest updates,
                         offers, and news directly to your inbox.</p>
                     <div>
-                        <a href="#"><button class="btn2">Get Started</button></a>
+                        <a href="#"><button class="btn2 m-btn">Get Started</button></a>
                     </div>
                 </div>
             </div>

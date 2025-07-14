@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 18px;
+    width: 100%;
+    background-color: #E7EFFF;
+}
+
+.nav-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 0;
+}
+
+.des-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.des-menu a {
+    color: #000D83;
+    font-weight: 500;
+}
+
+.des-menu a:hover {
+    color: #0BB4FF;
+}
+
+.des-btn {
+    display: flex;
+    gap: 14px;
+}
+
+.des-btn button {
+    background-color: #0BB4FF;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.des-btn .btn-01 {
+    background: transparent;
+    color: #000D83;
+    font-size: 15px;
+}
+
+.des-btn .btn-01:hover {
+    color: #0BB4FF;
+}
+
+.des-btn .btn-02:hover {
+    background-color: #000D83;
+}
+
+/* mobile respossive  */
+.mob-menu-btn {
+    display: none;
+}
+.mob-menu{
+    display: none;
+    background-color: #0BB4FF;
+    z-index: 1;
+}
+
+/* mobile menu style  */
+
+
+@media(max-width:910px) {
+
+    .des-menu,
+    .des-btn {
+        display: none;
+    }
+
+    .mob-menu-btn {
+        display: flex;
+    }
+    .mob-menu-btn .fa-solid{
+        color:#000D83;
+        font-size: 28px;
+        background-color: #E7EFFF;
+    }
+    .mob-menu{
+        display: none;
+    }
+    .mob-menu.active{
+        display: block;
+    }
+}
