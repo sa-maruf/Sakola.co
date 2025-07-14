@@ -74,20 +74,16 @@
     padding: 20px;
 }
 
-.mob-menu-box .menu {
+.mob-menu-box li {
     margin-top: 16px;
     padding: 6px 10px;
+    color: #000D83;
 }
 
-.mob-menu-box .menu:hover {
+.mob-menu-box li:hover {
     background-color: #000D83;
-    border-radius: 6px;
-    width: 100%;
-}
-
-.mob-menu-box .menu a:hover {
     color: white;
-    width: 100%;
+    border-radius: 6px;
 }
 
 .mob-btn-01,
